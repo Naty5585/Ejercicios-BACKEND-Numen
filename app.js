@@ -62,15 +62,10 @@ app.get('/parimpar', (req,res)=> {
 
 //Crear una ruta “lista de compras” (ruta con query) que devuelva un objeto con 5
 //productos, se debe usar res.json({objeto}).
+//http://localhost:3000/compras?product1=shampoo&product2=enjuague&product3=leche&product4=galletitas&product5=mermelada
 
 app.get('/compras', (req,res) => {
-  res.json({
-    producto1:req.query.pro1,
-    producto2:req.query.pro2,
-    producto3:req.query.pro3,
-    producto4:req.query.pro4,
-    producto5:req.query.pro5,
-  })
+  res.json(req.query)
 })
 
 
