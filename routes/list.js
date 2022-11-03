@@ -1,4 +1,3 @@
-
 const express = require('express')
 const router = express.router()
 const {shopList} = require('../controllers/listControllers')

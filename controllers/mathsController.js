@@ -39,4 +39,8 @@ const parImpar = (req,res)=> {
   }
 }
 
-module.exports = {sumar, dividir, parImpar}
+module.exports = {
+  sumar,
+  dividir,
+  parImpar
+}
