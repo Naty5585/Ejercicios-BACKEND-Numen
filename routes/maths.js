@@ -1,10 +1,10 @@
 
 const express = require('express')
-const router = express.router()
-const {sumar, dividir, parImpar} = require('../controllers/mathsController')
+const mathsRouter = express.Router()
+const { sumar, dividir, parImpar } = require('../controllers/mathsController')
 
-router.get('/suma/:num1/:num2', sumar )
-router.get('/division/:dividendo/:divisor', dividir )
-router.get('/parimpar', parImpar)
+mathsRouter.get('/suma/:num1/:num2', sumar )
+mathsRouter.get('/division/:dividendo/:divisor', dividir )
+mathsRouter.get('/parimpar', parImpar)
 
-module.exports = router
+module.exports = mathsRouter

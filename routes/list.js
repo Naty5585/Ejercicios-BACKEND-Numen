@@ -1,7 +1,7 @@
 const express = require('express')
-const router = express.router()
-const {shopList} = require('../controllers/listController')
+const listRouter = express.Router()
+const { shopList } = require('../controllers/listController')
 
-router.get('/shop', shopList)
+listRouter.get('/shop', shopList)
 
-module.exports = router
+module.exports = listRouter
