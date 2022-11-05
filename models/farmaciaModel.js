@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+//creacion de esquema de farmacia
 const Schema = mongoose.Schema
 const medicamentoSchema = new Schema({
   nombre:{
