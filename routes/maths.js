@@ -1,4 +1,3 @@
-
 const express = require('express')
 const mathsRouter = express.Router()
 const { sumar, dividir, parImpar } = require('../controllers/mathsController')

@@ -20,4 +20,10 @@ app.use('/list', listRouter)
 const logRouter = require('./routes/log')
 app.use('/log', logRouter)
 
+const farmaciaRouter = require('./routes/farmacia')
+app.use('/farmacia', farmaciaRouter)
+
+const { conect } = require('./db/db')
+conect()
+
 module.exports = app 
