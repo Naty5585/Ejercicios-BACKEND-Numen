@@ -1,12 +1,13 @@
 const express = require ('express') //guardamos express en una constante
 const app = express() // asignamos express con una funcion
-const logger = require("morgan")
+const logger = require("morgan") //middleware de app
+const cors = require('cors')
 
 //configuracion
 app.use(logger("dev"))
 app.use(express.json())
-
-//app.use('/', )
+//middleware de app
+app.use(cors())
 
 const mathsRouter = require('./routes/maths')
 app.use('/maths', mathsRouter)
